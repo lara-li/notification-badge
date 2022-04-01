@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Badge</title>
+    <script src="https://kit.fontawesome.com/444b1c8316.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding:20%;
+        }
+        .icon-btn {
+            cursor: pointer;
+            color:#333;
+            background-color: rgb(218, 199, 199);
+            padding: 1rem 1.2rem;
+            border: none;
+            border-radius: 50%;
+            position: relative;
+            transition: filter .3s ease;
+        }
+        .icon-btn>i {
+            font-size: 1.5rem;
+        }
+        .icon-btn__badge{
+            background-color: rgb(238, 71, 71);
+            color:#ddd;
+            padding: .3rem .5rem;
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+        }
+        .icon-btn:hover{
+            filter: brightness(105%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="icon-btn">
+        <i class="fas fa-bell"></i>
+        <span class="icon-btn__badge">2</span>
+    </button>
+</body>
+
+</html>
